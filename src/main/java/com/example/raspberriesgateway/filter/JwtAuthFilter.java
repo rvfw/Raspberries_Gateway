@@ -1,4 +1,4 @@
-package com.example.raspberriesgateway.filter;
+package com.example.raspberriesGateway.filter;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
@@ -9,7 +9,6 @@ import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
-import org.springframework.core.Ordered;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -22,7 +21,6 @@ import java.nio.charset.StandardCharsets;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 public class JwtAuthFilter implements GlobalFilter{

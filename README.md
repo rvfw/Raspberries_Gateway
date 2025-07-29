@@ -3,16 +3,18 @@
 
 Simple API Gateway for microservices arhitecture written in **Java Spring Boot** + **Java Cloud Gateway**.
 
-
-
-
-
 ## Features
 
 - Redirecting requests to the required servers.
 - Parse the JWT token and add X-User-Id and X-User-Roles headers to request private endpoints.
 - Handling authentication related errors.
 
+## Related
+
+Here are the services of my project:
+
+- [Raspberries Auth Service](https://github.com/rvfw/Raspberries_AuthService)
+- [Raspberries User Service](https://github.com/rvfw/Raspberries_UserService)
 
 ## API Reference
 
@@ -48,9 +50,4 @@ spring.cloud.gateway.routes[n].predicates[0] = Path=/path/predicate/**
 
 gateway.public-paths = /api/auth/login,/api/auth/register,{new public paths}
 ```
-## Related
-
-Here are other services of my project:
-
-- [Raspberries Auth Service](https://github.com/rvfw/Raspberries_AuthService)
 

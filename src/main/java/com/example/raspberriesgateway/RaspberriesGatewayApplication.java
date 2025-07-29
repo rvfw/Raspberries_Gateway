@@ -1,4 +1,4 @@
-package com.example.raspberriesgateway;
+package com.example.raspberriesGateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
